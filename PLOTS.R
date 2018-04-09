@@ -66,6 +66,7 @@ par(bg=NA,mai=c(0.6,0.6,0.1,0.1))
 
 plot(results$midpoint,results$total.predicted.households,xlim=c(600,1300),ylim=c(0,max(results$total.predicted.households)),axes=FALSE,type='l',lwd=1,xlab='',ylab='',col=NA)
 abline(v=c(600,results$end.years),lty=3,col='black')
+
 lines(results$midpoint,results$total.known.sites)
 points(results$midpoint,results$total.known.sites,pch=21,bg='black',cex=0.75)
 
@@ -74,12 +75,6 @@ points(results$midpoint,results$total.predicted.sites,pch=15,col='blue',cex=0.75
 
 lines(results$midpoint,results$total.predicted.households,col='red')
 points(results$midpoint,results$total.predicted.households,pch=15,bg='red',col='red',cex=0.75)
-
-# lines(results$midpoint,results$total.known.households)
-# points(results$midpoint,results$total.known.households,pch=21,bg='black',cex=0.75)
-
-# lines(results$midpoint,results$momentized.households,col='red')
-# points(results$midpoint,results$momentized.households,pch=17,bg='red',col='red',cex=0.75)
 
 axis(1,at=seq(600,1300,50),tick=T,labels=F)
 axis(2,at=seq(0,80,20),tick=T,labels=F)
@@ -140,8 +135,8 @@ plot(layer.5,legend.only=T,horiz=T,axis.args=list(labels=F,tck=F),col=water.colo
 dev.off()
 
 ################################################################################################
-## FIGURE_8: legend for predictive model results
+## FIGURE_7: legend for predictive model results
 
-pdf('./ANALYSIS/PLOTS/FIGURE_8.pdf')
+pdf('./ANALYSIS/PLOTS/FIGURE_7.pdf')
 plot(site.predictions,legend.only=T,horiz=T,axis.args=list(labels=F,tck=F),col=rev(heatcolors(10000)))
 dev.off()

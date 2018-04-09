@@ -19,7 +19,7 @@
 # you to download and install a file in your system to make everything run. These three things are noted
 # in ANALYSIS.R in the prediction model section at the bottom of the script.
 
-setwd('/WORKING/DIRECTORY/HERE/')
+setwd('/YOUR/WORKING/DIRECTORY/HERE/')
 
 ## DIRECTORIES
 dir.create('./ANALYSIS/PLOTS/',recursive=T,showWarnings=F)
